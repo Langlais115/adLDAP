@@ -24,7 +24,7 @@ if ($_POST["oldform"]) { //prevent null bind
 		//include the class and create a connection
 		include (dirname(__FILE__) . "/../lib/adLDAP/adLDAP.php");
         try {
-		    $adldap = new adLDAP();
+		    $adldap = new adLDAP\adLDAP();
         }
         catch (adLDAPException $e) {
             echo $e; 
